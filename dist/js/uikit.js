@@ -10243,7 +10243,7 @@ function plugin$9(UIkit) {
             finite: function finite(ref) {
                 var finite = ref.finite;
 		    
-		if (finite) { alert('test') } 
+		console.log(typeof(finite));
 
                 return finite || Transitioner.getWidth(this.list) < this.list.offsetWidth + Transitioner.getMaxWidth(this.list) + this.center;
             },
