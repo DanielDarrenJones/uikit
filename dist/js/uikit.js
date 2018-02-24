@@ -10242,6 +10242,8 @@ function plugin$9(UIkit) {
 
             finite: function finite(ref) {
                 var finite = ref.finite;
+		    
+		if (finite) { alert('test') } 
 
                 return finite || Transitioner.getWidth(this.list) < this.list.offsetWidth + Transitioner.getMaxWidth(this.list) + this.center;
             },
