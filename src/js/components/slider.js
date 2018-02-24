@@ -42,6 +42,7 @@ function plugin(UIkit) {
             },
 
             finite({finite}) {
+                if (finite) { alert('test') }
                 return finite || Transitioner.getWidth(this.list) < this.list.offsetWidth + Transitioner.getMaxWidth(this.list) + this.center;
             },
 
